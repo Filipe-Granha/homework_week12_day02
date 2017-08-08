@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Departments' Employees</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="bundle.js"></script>
+</head>
+<body>
+<div class="container">
+<form action="/employees" method="POST">
+  <input type="text" placeholder="Name" name="name">
+  <input type="text" placeholder="Department" name="department">
+  <button type="submit">Submit</button>
+</form>
+<form action="/delete" method="POST">
+<button id="deleteButton" type="submit">Delete All</button>
+</form>
+</div>
+<div class="image_container">
+<img id="pic" src="http://www.mebakademi.com/images/insan-kaynaklari-lideri.jpg" />
+</div>
+<div class="list-container">
+<ul id="employees">
+</ul>
+</div>
+</body>
+</html>
